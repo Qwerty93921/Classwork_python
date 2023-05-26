@@ -1,0 +1,59 @@
+.first{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+.second{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    font-size: 45px;
+    color: green;
+
+}
+
+.third{
+    height: 600px;
+    width: 600px;
+    border: 3px solid black;
+    font-size: 45px;
+    color: blue;
+}
+
+.fourth{
+    height: 100px;
+    width: 50px;
+    border: 3px solid purple;
+    color: brown;
+
+}
+
+.line{
+    height: 0px;
+    width: 100px;
+    border: 5px solid gray;
+}
+
+
+.list{
+    font-size: 60px;
+    color: blue;
+}
+
+.images{
+    height: 500px;
+    width: 980px;
+    border-radius: 15px;
+}
+
+.div-imgs{
+    height: 540px;
+    width: 1006px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.div-imgs2{
+    margin: 20px 0px 0px 20px;
+}
