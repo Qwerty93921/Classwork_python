@@ -1,0 +1,114 @@
+.block-line{
+    height: 300px;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.blc{
+    height: 120px;
+    width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.margin{
+    border: 1px solid rgb(0, 0, 0);
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    padding-left: 2px;
+    background-color: green;
+}
+
+.black-square{
+    border: 1px solid black;
+    height: 30px;
+    width: 180px;
+    background-color: gray;
+    color: white;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.white-square{
+    border: 1px solid black;
+    height: 30px;
+    width: 180px;
+    background-color: white;
+    color: black;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.border1{
+    border: 1px solid black;
+    height: 300px;
+    width: 400px;
+    padding-left: 5px;
+    margin-top: 30px;
+}
+
+.name-of-state{
+    color: blue;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size: 30px;
+
+}
+
+
+.side-word{
+    color: blue;
+    font-size: 20px;
+    padding-left: 280px;
+    padding-top: 20px;
+}
+
+
+.border-samsung1{
+    outline: 4px solid black;
+    border-radius: 10%;
+    height: 500px;
+    width: 300px;
+    background-image: url("img/Whitebear2.jpg");
+    margin-top: 20px;
+
+}
+
+.camera1{
+    outline: 2px solid black;
+    border-radius: 10%;
+    margin: auto;
+    background-color: black;
+    height: 15px;
+    width: 100px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+
+}
+
+.border-samsung2{
+    outline: 4px solid black;
+    border-radius: 10%;
+    height: 500px;
+    width: 300px;
+    background-image: url("img/Whitebear2.jpg");
+    margin-top: 20px;
+
+}
+
+.camera2{
+    outline: 2px solid black;
+    border-radius: 10%;
+    margin: auto;
+    background-color: black;
+    height: 15px;
+    width: 20px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+
+}
