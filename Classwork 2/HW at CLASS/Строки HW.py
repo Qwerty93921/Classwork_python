@@ -31,3 +31,4 @@ print(message2)
 
 # print("Коды символов: ", first_code, second_code, third_code)
 # print("Сумма кодов символов = ", code_sum)
+
