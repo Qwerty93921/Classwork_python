@@ -1,0 +1,43 @@
+.border-large{
+    border: 3px solid black;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+
+}
+
+
+
+.border-1{
+    border: 3px solid black;
+    height: 80px;
+    width: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.border-2{
+    height: 80px;
+    width: 600px;
+    text-align: center;
+    background-color: orange;
+    font-size: 23px;
+}
+
+.border-3{
+    border: 3px solid orange;
+    height: 80px;
+    width: 600px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.border-4{
+    height: 80px;
+    width: 600px;
+    text-align: center;
+    background-color: cyan;
+    font-size: 23px;
+}
