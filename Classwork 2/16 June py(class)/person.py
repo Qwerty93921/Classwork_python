@@ -5,7 +5,6 @@ class Person:
     name = ""
     iin = 0
     age = 0
-    ticket = None
 
 
 
@@ -28,3 +27,5 @@ class Person:
             return 0
         self.balance -= amount
         return amount
+
+print("Это человек", __name__)

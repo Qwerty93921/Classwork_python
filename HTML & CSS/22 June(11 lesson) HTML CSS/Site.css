@@ -1,0 +1,134 @@
+.header{
+    height: 100px ;
+    width: 100%;
+    outline: 1px solid black;
+}
+
+.wrapper{
+    outline: 1px solid black;
+    min-height: 800px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.left-side-1{
+    outline: 1px solid black;
+    height: 280px;
+    width: 600px;
+}
+
+.left-side-2{
+    outline: 1px solid black;
+    height: 100px;
+    width: 600px;
+}
+
+.right-side{
+    outline: 1px solid black;
+    height: 800px;
+    width: 600px;
+    float: right;
+    background-image: url("img1/green_man.PNG");
+}
+
+.button-top{
+    outline: 1px solid gray;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.login-button{
+    outline: 1px solid orange;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    background-color: white;
+    color: orange;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.register-button{
+    outline: 1px solid orange;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    background-color: orange;
+    color: white;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.explore{
+    outline: 1px solid black;
+    height: 280px;
+    width: 400px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.holiday{
+    outline: 1px solid black;
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.line{
+    outline: 1px solid black;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.button-bot{
+    outline: 1px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.explore-button{
+    outline: 1px solid orange;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: orange;
+    color: white;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.input-value{
+    /* display: inline-block; */
+    outline: 1px solid red;
+    width: 600px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

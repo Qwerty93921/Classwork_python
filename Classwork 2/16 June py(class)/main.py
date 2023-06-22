@@ -2,27 +2,27 @@ from person import Person
 from kassa import Kassa
 from train import Train
 
+if __name__ == "__main__":
+
+    print("Главная программа", __name__)
+
+    Elon = Person("Elon Musk", 55)
+    Elon.earn(97000)
+    Elon.pay(13000)
+    Elon.show()
+
+    # test_ticket = Ticket("Алматы", "Сантьяго", test_man.name, test_man.iin, test_man.age)
+    # test_ticket.show()
+
+    almaty1 = Kassa()
+    price = almaty1.get_price("Алматы", "Сантьяго")
+    almaty1.buy_ticket("Алматы", "Сантьянго", Elon)
+    almaty1.buy_ticket("Астана", "Калькутта", Elon)
 
 
-test_man = Person("Elon Musk", 55)
-test_man.earn(30000)
-test_man.pay(13000)
-test_man.show()
+    train = Train(almaty1, "Алматы", "Сантьянго")
+    train.show()
 
-# test_ticket = Ticket("Алматы", "Сантьяго", test_man.name, test_man.iin, test_man.age)
-# test_ticket.show()
-
-kassa = Kassa()
-price = kassa.get_price("Алматы", "Сантьяго")
-kassa.buy_ticket("Алматы", "Сантьянго", test_man)
-
-
-if test_man.ticket:
-    test_man.ticket.show()
-
-train = Train("Алматы", "Сантьянго")
-train.show()
-
-train.board(test_man)
-if test_man.ticket is None:
-    print("Билета больше нет")
+    print(almaty1.tickets)
+    train.board(Elon)
+    print(almaty1.tickets)
