@@ -1,0 +1,22 @@
+.border-large{
+    border: 3px solid black;
+    height: 120px;
+    width: 350px;
+    text-align: center;
+    font-size: 130%;
+    border-radius: 10%;
+    background-image: url("img/FOOD.jpg");
+    color:blue;
+}
+
+.border-2{
+    border: 3px solid black;
+    height: 120px;
+    width: 350px;
+    text-align: center;
+    font-size: 170%;
+    background-color: red;
+    color: purple;
+    border-radius: 10%;
+    background-image: url("img/SALES.jpg");
+}

@@ -1,0 +1,142 @@
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightseagreen;
+    height: 80px;
+    width: 1700px;
+    position: sticky;
+    top: 8px;
+    bottom: 200px;
+    z-index: 2;
+}
+
+.large-border-1{
+    border: 3px solid lightskyblue;
+    height: 1000px;
+    width: 1700px;
+    background-color: lightskyblue;
+    position: sticky;
+    z-index: 1;
+}
+
+
+.button-right{
+    border: 3px solid white;
+    height: 48px;
+    width: 78px;
+    position: relative;
+    top: 12px;
+    left: 1154px;
+    float: left;
+    margin-left: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 44px;
+    z-index: 2;
+}
+
+
+.button-left{
+    border: 3px solid white;
+    height: 48px;
+    width: 78px;
+    position: relative;
+    top: 12px;
+    left: -522px;
+    float: left;
+    background-color: white;
+    text-align: center;
+    line-height: 44px;
+    z-index: 2;
+    scroll-margin-bottom: 50px;
+}
+
+.button-left-2{
+    border: 3px solid white;
+    height: 48px;
+    width: 300px;
+    position: relative;
+    top: 12px;
+    left: -480px;
+    float: left;
+    background-color: white;
+    text-align: center;
+    line-height: 44px;
+    z-index: 2;
+    scroll-margin-bottom: 50px;
+}
+
+.large-border-2{
+    border: 3px solid blue;
+    height: 1000px;
+    width: 1700px;
+    background-color: blue;
+    position: sticky;
+    z-index: 1;
+}
+
+.border-mid-1{
+    border: 3px solid white;
+    background-color: white;
+    height: 40px;
+    width: 500px;
+    z-index: 2;
+    margin: auto;
+    margin-top: 99px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 200%;
+}
+
+.border-mid-2{
+    border: 3px solid white;
+    background-color: white;
+    height: 40px;
+    width: 600px;
+    z-index: 2;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 200%;
+}
+
+.border-mid-3{
+    border: 3px solid white;
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    z-index: 2;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 200%;
+}
+
+.large-border-3{
+    border: 3px solid cyan;
+    height: 1000px;
+    width: 1700px;
+    background-color: cyan;
+    position: sticky;
+    z-index: 1;
+}
+
+.large-border-4{
+    border: 3px solid pink;
+    height: 1000px;
+    width: 1700px;
+    background-color: pink;
+    position: sticky;
+    z-index: 1;
+}
+
+.large-border-5{
+    border: 3px solid purple;
+    height: 1000px;
+    width: 1700px;
+    background-color: purple;
+    position: sticky;
+    z-index: 1;
+}
