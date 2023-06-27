@@ -17,3 +17,7 @@ print(fourth_list)
 # ['sun', 0, 'Bla-bla', 'Hello']
 # False
 # ['sun', 0, 666, 'Hello']
+
+# reverse() - обратный порядок списка
+
+# copy() - возвращает поверхностную копию списка
