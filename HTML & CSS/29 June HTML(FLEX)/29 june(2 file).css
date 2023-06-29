@@ -1,0 +1,53 @@
+.border-large{
+    outline: 3px solid red;
+    height: 800px;
+    width: 100%;
+    /* margin-top: 20px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.border-1{
+    outline: 3px solid green;
+    height: 800px;
+    width: 700px;
+    background-color: green;
+    font-size: 60px;
+    flex:auto;
+    /* занимает ВСЕ место которое свободно */
+    display: flex;
+    justify-content: center;
+    /* ставит в центр текст ПО ГОРИЗОНТАЛИ */
+    align-items: center;
+    /* ставит в центр текст ПО ВЕРТИКАЛИ */
+}
+
+.border-2{
+    outline: 3px solid purple;
+    height: 400px;
+    width: 500px;
+    background-color: purple;
+    font-size: 60px;
+    text-align: center;
+    line-height: 350px;
+    flex-direction: column;
+}
+
+.border-3{
+    outline: 3px solid blue;
+    height: 400px;
+    width: 500px;
+    background-color: blue;
+    font-size: 60px;
+    text-align: center;
+    line-height: 350px;
+    flex-direction: column;
+
+}
+
+.right-side{
+    outline: 3px solid black;
+    height: 800px;
+    width: 500px;
+}
