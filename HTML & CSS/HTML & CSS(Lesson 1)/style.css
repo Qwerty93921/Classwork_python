@@ -1,0 +1,35 @@
+/* border это рамка, solid почва-цвет рамки, font size - размер шрифта внутри рамки, ТОЧКА В НАЧАЛЕ это СОЗДАНИЕ КЛАССА, SPAM - это создание ПОДКЛАССА внутри DIV с особыми правилами
+внутри него самого
+#Слово это обращение к ID
+.Class - создание класса
+*/
+.class1{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    font-size: 26px;
+    text-align: center;
+    color: brown;
+    
+}
+
+.spn{
+    color: blue;
+    font-size: 50px;
+}
+
+.class2{
+    border: 2px solid red;
+    height: 100px;
+    width: 200px;
+    font-size: 100px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.letters{
+    color:black;
+    font-size: 30px;
+    color: green;
+
+}
