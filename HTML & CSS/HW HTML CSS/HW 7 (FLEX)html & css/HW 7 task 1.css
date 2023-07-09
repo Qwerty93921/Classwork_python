@@ -1,0 +1,117 @@
+.container{
+    outline: 3px solid black;
+    height: 1500px;
+    max-width: 1700px;
+    min-width: 1000px;
+    display: flex;
+    margin: auto;
+    min-height: 500px;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+}
+
+.item-350-150{
+    outline: 3px gray;
+    max-width: 350px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: gray;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.item-350-100{
+    outline: 3px solid gray;
+    width: 350px;
+    height: 100px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: gray;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.item-350-220{
+    outline: 3px solid gray;
+    width: 350px;
+    height: 220px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: gray;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.item-350-230{
+    outline: 3px solid gray;
+    width: 350px;
+    height: 230px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: gray;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.item-350-350{
+    outline: 3px solid gray;
+    width: 350px;
+    height: 350px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: gray;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.white-border{
+    outline: 3px solid sandybrown;
+    width: 350px;
+    height: 200px;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 20px;
+    background-color: sandybrown;
+    flex-direction: column;
+    margin-left: 50px;
+    display: flex;
+    line-height: 27px;
+}
+
+.right-side{
+    
+    height: 1500px;
+    width: 566px;
+    min-width: 100px;
+    min-height: 700px;
+    background-color: aquamarine;
+}
+
+.left-side{
+    
+    background-color: aquamarine;
+    height: 1500px;
+    width: 566px;
+    min-width: 100px;
+    min-height: 700px;
+}
+
+.mid-side{
+    
+    background-color: aquamarine;
+    height: 1500px;
+    width: 566px;
+    min-width: 100px;
+    min-height: 700px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; *//* по дефолту*/ 
+            /* flex-direction: row-reverse; */
+            /* justify-content: flex-end;  */
+            justify-content: space-between;
+            outline: 1px solid black;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            flex-wrap: wrap; /*что бы не выходили за рамки*/
+            
+
+        }
+        .item{
+            padding: 40px;
+            font-size: 25px;
+            border: 1px solid black;
+            height: fit-content; /*Зависимость рамероа от сожержимого дочерних или внутриних классво*/
+            width: fit-content;
+            /* flex-basis: 20%; */
+            /*
+             flex-basis: 20%; для элемента, это означает, что элемент будет занимать изначально 20% от 
+             доступного свободного пространства в контейнере*/
+        }
+        .item_1{
+            order: 3; /* порядок items*/
+            /* align-self: center; можно по отдельности использовать */
+            flex-shrink: 2;
+        }
+        .item_2{
+             order: 2;
+             flex-shrink: 2;
+        }
+        .header_items{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid black;
+            min-width: 50px;
+            margin-left: 15px;
+        }
+        .items_header{
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="header_items">home</div>
+    <div class="header_items">home</div> 
+    <div class="header_items">home</div>
+    <div class="header_items">home</div> -->
+
+    <div class="container">
+        <div class="item item_1">1</div>    
+        <div class="item item_2">2</div>    
+        <div class="item item_3">3</div>                        
+    </div>
+</body>
+</html>

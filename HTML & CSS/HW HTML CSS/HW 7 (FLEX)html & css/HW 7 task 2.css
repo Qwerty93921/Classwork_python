@@ -1,0 +1,192 @@
+.large-border{
+    outline: 3px solid black;
+    height: 900px;
+    width: 1600px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: silver;
+        
+}
+
+.border-1{
+    outline: 3px solid pink;
+    height: 100px;
+    width: 600px;
+    background-color: pink;
+    border-radius: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.border-2{
+    outline: 3px solid aqua;
+    height: 100px;
+    width: 600px;
+    background-color: aqua;
+    border-radius: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.man-1{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_1.png");
+    position: relative;
+    right: 410px;
+    bottom: 605px;
+    float: right;
+    display: flex;
+
+}
+
+.man-2{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_1.png");
+    position: relative;
+    right: 340px;
+    bottom: 345px;
+    float: right;
+    display: flex;
+}
+
+.man-3{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_1.png");
+    position: relative;
+    right: 270px;
+    bottom: 85px;
+    float: right;
+    display: flex;
+}
+
+.woman-1{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_2.png");
+    position: relative;
+    right: -410px;
+    bottom: 735px;
+    float: left;
+    display: flex;
+}
+
+.woman-2{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_2.png");
+    position: relative;
+    right: -340px;
+    bottom: 475px;
+    float: left;
+    display: flex;
+}
+
+.woman-3{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url("img_flex/avatar_2.png");
+    position: relative;
+    right: -270px;
+    bottom: 215px;
+    float: left;
+    display: flex;
+}
+
+.man-name-1{
+    
+    height: 100px;
+    width: 300px;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    left: 2px;
+    bottom: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-name-2{
+    
+    height: 100px;
+    width: 300px;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    left: 302px;
+    bottom: 364px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.man-name-3{
+    
+    height: 100px;
+    width: 300px;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    left: 602px;
+    bottom: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman-name-1{
+    height: 100px;
+    width: 300px;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    left: 218px;
+    bottom: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman-name-2{
+    height: 100px;
+    width: 300px;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    left: -82px;
+    bottom: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman-name-3{
+    height: 100px;
+    width: 300px;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    left: -380px;
+    bottom: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
