@@ -1,0 +1,351 @@
+.header{
+    height: 100px ;
+    width: 100%;
+    
+}
+
+.wrapper{
+    
+    min-height: 800px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.left-side-1{
+    
+    height: 280px;
+    width: 600px;
+}
+
+.left-side-2{
+    
+    height: 100px;
+    width: 600px;
+}
+
+.right-side{
+    
+    height: 800px;
+    width: 600px;
+    float: right;
+    background-image: url("img1/green_man.PNG");
+}
+
+.button-top{
+    
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.login-button{
+    
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    background-color: white;
+    color: orange;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.register-button{
+    
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    background-color: orange;
+    color: white;
+    line-height: 50px;
+    font-size: large;
+    border-radius: 11%;
+}
+
+.explore{
+    
+    height: 280px;
+    width: 400px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.holiday{
+    
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.line{
+    
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.button-bot{
+    
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.explore-button{
+    
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: orange;
+    color: white;
+    line-height: 50px;
+    font-size: 21px;
+    border-radius: 11%;
+}
+
+.input-value{
+    /* display: inline-block; */
+    
+    width: 600px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+.wrapper-2{
+    
+    min-height: 800px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.left-side-3{
+    
+    height: 640px;
+    width: 700px;
+    background-image: url("img1/balloon.PNG");
+}
+
+.right-side-2{
+    
+    height: 800px;
+    width: 500px;
+    float: right;
+    position: relative;
+    bottom: 630px;
+
+}
+
+.new-way{
+    
+    height: 120px;
+    width: 500px;
+    margin-top: 130px;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.gray-text-1{
+    
+    height: 200px;
+    width: 500px;
+    font-size: 28px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: gray;
+}
+
+.view-all{
+    
+    height: 100px;
+    width: 200px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    color: orange;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+
+.featured{
+    
+    height: 100px;
+    width: 500px;
+    margin-top: 130px;
+    font-size: 40px;
+    padding-left: 15px;
+    line-height: 90px;
+}
+
+.border-image-1{
+    
+    height: 380px;
+    width: 250px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 11%;
+    background-image: url("img1/image_1.PNG");
+}
+
+.border-image-2{
+    
+    height: 380px;
+    width: 250px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 300px;
+    bottom: 400px;
+    border-radius: 11%;
+    background-image: url("img1/image_2.PNG");
+}
+
+.border-image-3{
+    
+    height: 380px;
+    width: 250px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 600px;
+    bottom: 800px;
+    border-radius: 11%;
+    background-image: url("img1/image_3.PNG");
+}
+
+.border-image-4{
+    
+    height: 380px;
+    width: 250px;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 1200px;
+    border-radius: 11%;
+    background-image: url("img1/image_4.PNG");
+}
+
+.right-side-3{
+    
+    height: 600px;
+    width: 700px;
+    float: right;
+    position: relative;
+    bottom: 1030px;
+    background-image: url("img1/green_man_2.PNG");
+}
+
+
+.guides-by-thousand{
+    
+    height: 120px;
+    width: 500px;
+    margin-top: 130px;
+    font-size: 40px;
+    padding-left: 15px;
+    position: relative;
+    bottom: 988px;
+
+}
+
+.gray-text-2{
+    
+    height: 200px;
+    width: 500px;
+    font-size: 28px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: gray;
+}
+
+.big-border{
+    
+    height: 400px;
+    width: 1200px;
+}
+
+.gray-text-3{
+    
+    height: 200px;
+    width: 500px;
+    font-size: 28px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: gray;
+    position: relative;
+    bottom: 983px;
+}
+
+.explore-button-copy{
+    
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: orange;
+    color: white;
+    line-height: 50px;
+    font-size: 21px;
+    border-radius: 11%;
+    position: relative;
+    bottom: 1000px;
+}
+
+.testimonials{
+    
+    height: 500px;
+    width: 900px;
+    position: relative;
+    bottom: 500px;
+    left: 150px;
+    background-image: url("img1/testimonials_2.PNG");
+
+}
+
+.four-images{
+    
+    height: 510px;
+    width: 1040px;
+    position: relative;
+    bottom: 500px;
+    left: 100px;
+    margin-top: 500px;
+    background-image: url("img1/image_5.PNG");
+
+
+}
