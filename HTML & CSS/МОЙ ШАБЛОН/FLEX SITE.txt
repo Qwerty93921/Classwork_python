@@ -1,3 +1,8 @@
 https://html5.by/blogdemo/flexbox/flex-direction-align-justify.html
 
 https://flexboxfroggy.com/
+
+
+https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox
+https://html5book.ru/css3-flexbox/
+https://html5.by/blog/flexbox/
