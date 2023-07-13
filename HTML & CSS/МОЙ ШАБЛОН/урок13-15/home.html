@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            outline: 3px solid red;
+        }
+        .block-first{
+            background-color: green;
+            min-height: 430px;
+            font-size: 40px;
+            color: white;
+            flex: auto;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .container-right{
+            margin-left: 30px;
+            display: flex;
+            flex: 0 0 220px;
+           
+            flex-direction: column;
+        }
+        .block-item{
+            display: flex;
+            background: black;
+            min-height: 50px;
+            font-size: 40px;
+            color: white;
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;   
+        }
+        .block-item:last-child{  
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block-first">1</div>
+        <div class="container-right">
+            <div class="block-item">2</div>
+            <div class="block-item">3</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+    

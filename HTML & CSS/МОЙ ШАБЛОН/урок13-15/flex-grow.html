@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            color: blue;
+            font-size: 2rem;
+            width: 90%;
+            margin: 0 auto;
+            padding: 30px;
+            min-height: 500px;
+            flex-direction: row;
+        }
+        .items{
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+
+            .item-1 {
+               
+               background-color: black;
+               flex-shrink: 0;
+            }
+
+            .item-2 {
+              
+                background-color: green;
+                flex-grow: 1; 
+                flex-shrink: 3; /*при жимание будет жиматься сильней*/
+            }
+            .item-3 {
+                background-color:red;
+            }
+            .item-4 {
+                background-color: black;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1 items">1</div> 
+        <div class="item-2 items">2</div>
+        
+    </div> 
+</body>
+</html>
