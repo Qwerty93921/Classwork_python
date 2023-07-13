@@ -1,0 +1,52 @@
+.big-border{
+    outline: 3px solid black;
+    height: 800px;
+    width: 700px;
+    margin:auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: blue;
+
+}
+
+.large-border{
+    outline: 3px solid black;
+    height: 1800px;
+    width: 700px;
+    margin:auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: blue;
+}
+
+.line{
+    outline: 3px solid gray;
+    height: 0px;
+    width: 500px;
+    margin:auto
+}
+
+.login-class{
+    outline: 3px solid red;
+    height: 100px;
+    width: 600px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.enter-button{
+    outline: 3px solid blue;
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    float: right;
+    margin-top: 150px;
+    margin-right: 50px;
+    line-height: 50px;
+
+}
