@@ -28,4 +28,4 @@ with open("14 July text 1.txt", "w", encoding="utf-8") as myfile:
 
 # dumps - со строками
 # dump - с файлами
-# json - Java script o... n...
+# json - Java script object notation

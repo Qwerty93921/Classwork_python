@@ -48,7 +48,6 @@ def perform_action(effect):
     current_scene = effect["go"]
 
 
-
 while True:
     time.sleep(3)
     line = '-' * 50
