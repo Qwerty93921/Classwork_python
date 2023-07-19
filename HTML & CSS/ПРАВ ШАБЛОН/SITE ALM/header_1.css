@@ -1,0 +1,48 @@
+body{
+    border: 3px solid red;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+a{
+    border: 3px solid purple;
+    color: white;
+    text-decoration: none;
+    /* Если убрать кнопки будут подчекрнуты снизу полоской */
+    /* a - обращение ко всем ссылкам */
+}
+
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #689cd2;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    min-width: 430px;
+}
+
+.header_sections{
+    border: 3px solid green;
+    display: flex;
+    align-items: center;
+}
+
+.header_item{
+    border: 3px solid gold;
+    padding: 10px 15px;
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+.header_item:hover{
+    background-color: #ff9900;
+    border-radius: 4px;
+}
+
+.headerButton{
+    cursor: pointer;
+    /* При наведении на кнопку СТРЕЛКА меняется на ДРУГОЙ ЗНАК */
+}

@@ -1,0 +1,9 @@
+.footer{
+    background: black;
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    color: white;
+    margin: auto;
+    box-sizing: border-box;
+}

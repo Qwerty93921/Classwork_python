@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    /* max-width: 960px; */
+    max-width: 100%;
+    min-width: 430px;
+    color: white;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 25px;
+}

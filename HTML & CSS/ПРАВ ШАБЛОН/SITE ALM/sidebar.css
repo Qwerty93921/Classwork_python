@@ -1,0 +1,30 @@
+.sideBar{
+    border: 5px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+    width: 150px;
+    border-right:1px solid #D7Dbdd ;
+    /* ТОЛЬКО ПРАВАЯ СТОРОНА рамки будет этого цвета */
+    background-color: white;
+    padding: 10px;
+
+}
+
+.sideBar_item a{
+    color:#689cd2;
+}
+
+.sideBar_item{
+    border: 3px solid blue;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.sideBar_item:hover{
+    background-color: #eef3f5;
+    border-radius: 4px;
+
+}

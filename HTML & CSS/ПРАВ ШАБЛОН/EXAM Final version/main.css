@@ -1,0 +1,239 @@
+.main{
+    width: 100%;
+    /* max-width: 960px; */
+    max-width: 100%;
+    min-width: 430px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+    /* Свойства width и height включают в себя значения полей и границ, но не отступов (margin).  */
+    border: 10px solid brown;
+}
+
+.sideBar{
+    border: 10px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 680px;
+    width: 150px;
+    border-right:1px solid #D7Dbdd ;
+    /* ТОЛЬКО ПРАВАЯ СТОРОНА рамки будет этого цвета */
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.sideBar_item a{
+    color:gray;
+}
+
+.sideBar_item{
+    border: 3px solid blue;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.sideBar_item:hover{
+    background-color: #eef3f5;
+    border-radius: 4px;
+}
+
+.sideBar_item a:hover{
+    color: black;
+}
+
+.big-border{
+    border: 5px solid aqua;
+    height: 700px;
+    width: 600px;
+    margin-top: 15px;
+    margin-right: 120px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.border-1{
+    border: 5px solid green;
+    height: 250px;
+    max-height: 250px;
+    max-width: 700px;
+    min-width: 600px;
+    margin-top: 50px;
+    margin-right: 350px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    background-color: gold;
+
+}
+
+
+.border-1-header{
+    border: 5px solid red;
+    border-bottom: 5px solid gray;
+    height: 50px;
+    width: 570px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: white;
+
+}
+
+.border-2{
+    border: 5px solid green;
+    background-color: darkturquoise;
+    height: 250px;
+    width: 600px;
+    min-width: 300px;
+    margin-top: 50px;
+    margin-right: 350px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.students-border{
+    border: 5px solid aqua;
+    height: 700px;
+    width: 600px;
+    min-width: 300px;
+    margin-top: 15px;
+    margin-right: 120px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.student{
+    border: 5px solid blue;
+    height: 50px;
+    width: 570px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 25px;
+}
+
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 10px solid violet;
+    /* margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px; */
+}
+.grid-itm{
+    margin-bottom: 30px;
+    flex-basis: calc(33.33% - 30px * (2/3));
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+.grid-img{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-2{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/charger.PNG);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-3{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/hoodie-1.PNG);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-4{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/hoodie-2.PNG);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-5{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/sticker.PNG);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-6{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/bottle.jpg);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-7{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/154x154\ mug.jpg);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-img-8{
+    width: 300px;
+    height: 300px;
+    background-image: url(img/backpack-2.webp);
+    margin: 0px auto 20px;
+    flex: 0 1 80%;
+    border: 8px solid cyan;
+}
+
+.grid-title{
+    text-align: center;
+    border: 3px solid black;
+
+}
+
+.grid-cont{
+    flex:0 1 100%;
+    border: 5px solid blue;
+}
+
+.grid-text{
+    border: 5px solid darkcyan;
+    height: 100px;
+    width: 570px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
