@@ -7,11 +7,11 @@
     flex: auto;
     box-sizing: border-box;
     /* Свойства width и height включают в себя значения полей и границ, но не отступов (margin).  */
-    border: 10px solid brown;
+    /* border: 10px solid brown; */
 }
 
 .sideBar{
-    border: 10px solid darkblue;
+    /* border: 10px solid darkblue; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +29,7 @@
 }
 
 .sideBar_item{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     cursor: pointer;
     padding: 10px 10px;
     font-size: 20px;
@@ -45,7 +45,7 @@
 }
 
 .big-border{
-    border: 5px solid aqua;
+    /* border: 5px solid aqua; */
     height: 700px;
     width: 600px;
     margin-top: 15px;
@@ -57,9 +57,9 @@
 }
 
 .border-1{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     height: 250px;
-    width: 600px;
+    width: 590px;
     max-height: 250px;
     max-width: 700px;
     min-width: 300px;
@@ -76,7 +76,7 @@
 
 
 .border-1-header{
-    border: 5px solid red;
+    border: 2px solid black;
     border-bottom: 5px solid gray;
     height: 50px;
     width: 570px;
@@ -85,11 +85,12 @@
     align-items: center;
     padding-left: 20px;
     background-color: white;
+    margin-top: 0px;
 
 }
 
 .border-2{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     background-color: darkturquoise;
     height: 250px;
     width: 600px;
@@ -105,7 +106,7 @@
 }
 
 .students-border{
-    border: 5px solid aqua;
+    border: 2px solid black;
     height: 700px;
     width: 600px;
     min-width: 300px;
@@ -118,7 +119,7 @@
 }
 
 .student{
-    border: 5px solid blue;
+    border: 2px solid black;
     height: 50px;
     width: 570px;
     min-width: 300px;
@@ -128,6 +129,7 @@
     margin-top: 20px;
     background-color: white;
     font-size: 25px;
+    margin-left: 3px;
 }
 
 
@@ -135,7 +137,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 10px solid violet;
+    /* border: 10px solid violet; */
     /* margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px; */
@@ -145,7 +147,7 @@
     flex-basis: calc(33.33% - 30px * (2/3));
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .grid-img{
     width: 200px;
@@ -153,7 +155,7 @@
     background-color: black;
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-2{
@@ -162,7 +164,7 @@
     background-image: url(img/charger.PNG);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-3{
@@ -171,7 +173,7 @@
     background-image: url(img/hoodie-1.PNG);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-4{
@@ -180,7 +182,7 @@
     background-image: url(img/hoodie-2.PNG);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-5{
@@ -189,7 +191,7 @@
     background-image: url(img/sticker.PNG);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-6{
@@ -198,7 +200,7 @@
     background-image: url(img/bottle.jpg);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-7{
@@ -207,7 +209,7 @@
     background-image: url(img/154x154\ mug.jpg);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-img-8{
@@ -216,22 +218,22 @@
     background-image: url(img/backpack-2.webp);
     margin: 0px auto 20px;
     flex: 0 1 80%;
-    border: 8px solid cyan;
+    /* border: 8px solid cyan; */
 }
 
 .grid-title{
     text-align: center;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 
 }
 
 .grid-cont{
     flex:0 1 100%;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .grid-text{
-    border: 5px solid darkcyan;
+    /* border: 5px solid darkcyan; */
     height: 100px;
     width: 570px;
     min-width: 300px;

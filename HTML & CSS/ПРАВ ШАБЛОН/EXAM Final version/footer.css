@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: gray;
     /* max-width: 960px; */
     max-width: 100%;
     min-width: 430px;
@@ -9,5 +9,19 @@
     margin: auto;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-border-1{
+    /* border: 3px solid red; */
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
