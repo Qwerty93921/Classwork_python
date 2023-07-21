@@ -6,6 +6,7 @@ def get_debts(people):
         if people.values() > 0:
             debtors += 1
         sum_of_values = sum(people.values())
+    return sum_of_values
 
 
 
