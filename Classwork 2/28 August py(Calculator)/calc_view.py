@@ -51,3 +51,6 @@ def calculator_activate():
     app.exec_()
 
 calculator_activate()
+
+class AccountCalcView():
+    pass
