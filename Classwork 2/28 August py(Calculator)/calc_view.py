@@ -11,7 +11,7 @@ if __name__ == '__main__':
     os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = "venv/Lib/site-packages/PyQt5/Qt5/plugins/platforms"
 
 
-class Calculator(QWidget):
+class SimpleCalcView(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Calculator")
@@ -46,11 +46,26 @@ class Calculator(QWidget):
 
 def calculator_activate():
     app = QApplication([])
-    calculator = Calculator()
+    calculator = SimpleCalcView()
     calculator.show()
     app.exec_()
 
 calculator_activate()
 
-class AccountCalcView():
-    pass
+class AccountCalcView(SimpleCalcView):
+    def __init__(self):
+        super().__init__()
+        keys_layout = QGridLayout()
+        self.layout().addLayout(keys_layout)
+
+        keys = ('(', ')', '%', '')
+
+        for r in range(len(keys)):
+            key = keys[r]
+            if key:
+                btn = QPushButton(text = key)
+                btn.clicked.connect(self.on_button_pressed)
+                if key != '%':
+                    keys_layout.addWidget(btn, 0, r)
+                else:
+                    keys_layout.addWidget(btn, 0, r, 1, 2)
