@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 September OOP</title>
+</head>
+<body>
+    <script lang="js">
+        // let user = {
+        //     id: "x0001",
+        //     name: "Chingis",
+        //     age: 25,
+        //     working: true,
+        //     bodyDetails: {
+        //         weight: 65,
+        //         height: 175
+        //     },
+
+        //     married: null,
+
+        //     requisites: [
+        //         {
+        //             id: 1,
+        //             bankName: "Halyk bank",
+        //             value: "KZ123123123123123",
+        //         },
+
+        //         {
+        //             id: 2,
+        //             bankName: "HalykBank",
+        //             value: "891237123123",
+        //         },
+
+        //         {
+        //             id: 3,
+        //             bankName: "Forte bank",
+        //             value: "890172397123",
+        //         },
+
+        //     ],
+        //     count(number) { // МЕТОД - НЕ ФУНКЦИЯ -------------------------
+        //         return number * 100;
+        //     },
+
+        // }
+
+        // console.log({user})
+        // console.log(user.count(555))
+
+        // class User {
+        //     constructor(n, i) {
+        //         this.name = n;
+        //         this.id = i;
+        //     }
+        // }
+
+        // let user = new User("Alex", 1); ------------------------- Создание нового объекта от класса
+        // let user2 = new User("Abe", 2);
+
+        // console.log({user})
+        // console.log({user2})
+
+    // ---------------------------------------------------------------------------------------------------------- 
+
+        class PrintMachine {
+            constructor(fontSize, color, fontFamily) {
+                this.fontSize = fontSize
+                this.color = color
+                this.fontFamily = fontFamily
+            }
+            print(text) {
+                console.log(this.fontSize)
+                return document.write(`<div style="font-size: ${this.fontSize}; color: ${this.color}; ">${text}</div>`
+                )
+            }
+        }
+
+        let Machine_1 = new PrintMachine("48px", "blue", "Times NewRoman");
+        Machine_1.print("TEXTETTETTTXTSD")
+
+        
+    </script>
+
+
+</body>
+    <script src="07 September.js"></script>
+</html>
+
+<!-- Vue.js and React - frameworks 
+BEM - Block Element Modifier(CSS Architecture) - OLD and is not used now
+Angular - bad(teacher's words)
+
+-->
