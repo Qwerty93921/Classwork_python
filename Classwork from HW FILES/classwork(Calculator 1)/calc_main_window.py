@@ -10,4 +10,3 @@ class CalcMainWindow(QMainWindow):
     def set_view(self, view):
         self.calc_view = view
         self.setCentralWidget(self.calc_view)
-
