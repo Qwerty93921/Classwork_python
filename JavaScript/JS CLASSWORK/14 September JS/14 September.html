@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+    <h1>Классы JavaScript 14 September</h1>
+    <script lang="js">
+
+        class Circle{
+            radius = null;
+
+            getRadius() {
+                return this.radius;
+            }
+
+            setRadius(value) {
+                return this.radius = value;
+            }
+
+            getDiameter() {
+                return this.radius * 2;
+            }
+
+            getAreaOfCircle() {
+                return Math.PI * Math.pow(this.radius, 2); // число Пи * R**2
+            }
+
+            getLengthOfCircle() {
+                return 2 * Math.PI * this.radius; // Метод вычисления длины круга
+            }
+
+        }
+
+        const circleExample1 = new Circle();
+        circleExample1.setRadius(2);
+        circleExample1.getRadius();
+        circleExample1.getDiameter();
+        circleExample1.getAreaOfCircle();
+        circleExample1.getLengthOfCircle();
+
+
+        console.log("Task 1")
+        console.log("Radius = " + circleExample1.getRadius());
+        console.log("Diameter = " + circleExample1.getDiameter());
+        console.log("Area of circle = " + circleExample1.getAreaOfCircle());
+        console.log("Length of circle" + circleExample1.getLengthOfCircle());
+        console.log("---------------------------------------------------------------")
+
+
+        // Писать let в переменных ВНУТРИ КЛАССА НЕ НУЖНО 
+
+        // Task 2
+
+        class HtmlElement {
+            tagName = "<div>";
+            ownClosed;
+            text = "";
+            attrs = [];
+            styles = [];
+            subTags = [];
+
+            // ------------------------------------------------------------------------------------------------
+
+            // createElement() {
+            //     if (this.ownClosed) {
+            //     return `<${this/tagName}></${this.tagName}>`;
+            // } else {
+            //     return `<${this.tagName}/>`;
+            // }
+
+            // ------------------------------------------------------------------------------------------------
+
+            createElement(tag, condition) {
+                return condition ? `<${tag}></${tag}>\n` : `<${tag}/>\n`; // E56
+            }
+
+            setStyle() {
+
+            }
+
+            setAttr() {
+
+            }
+
+            createHtml() {
+                this.subTags.forEach((tag) => {
+                    const subTags = this.createElement(tag.subTagName, tag.ownClosed);
+                })
+            }
+
+            // getHtml() {
+            //     return this.createElement();
+            // }
+
+
+        }
+
+        let el = document.createElement('div')
+
+
+        const html1 = new HtmlElement;
+        html1.tagName = "div";
+        html1.ownClosed = true;
+        html1.text = "Обратите внимание";
+        html1.attrs = ['style', 'src', 'alt', 'target', 'href'];
+        // html1.styles = [
+        //     {selector: 'margin', value: "10px"},
+        //     {selector: 'color', value: "green"},
+        //     {selector: 'width', value: "100%"},
+        //     {selector: 'text-align', value: "justify"},
+        // ];
+        // html1.subTags = ['h3', 'img', 'p'];
+
+        html1.subTags = [
+            { subTagName: 'h3', ownClosed: true},
+            { subTagName: 'img', ownClosed: true},
+            { subTagName: 'h3', ownClosed: true},
+
+        ]
+
+        html1.createElement();
+        console.log(html1)
+
+
+
+    </script>
+</body>
+</html>
