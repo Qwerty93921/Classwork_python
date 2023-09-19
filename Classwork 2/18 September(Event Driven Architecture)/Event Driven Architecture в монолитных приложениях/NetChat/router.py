@@ -1,8 +1,11 @@
 from PyQt6.QtCore import QObject
+from logger import Logger
 from gui import Gui
 from data_storage import DataStorage
 from udp_receiver import UdpReceiver
 from udp_sender import UdpSender
+
+log = Logger.Instance
 
 # From название папки.название файла import Класс БЕЗ СКОБОК
 
@@ -18,6 +21,15 @@ from udp_sender import UdpSender
 # .\venv\Scripts\activate
 # pip install PyQt6
 # pip freeze > requirements.txt
+
+# pip install pyqt6-tools(Новый урок)
+# pyqt6-tools designer(Запуск программы "Qt Designer")
+# Создать большую рамку ГОРИЗОНТАЛЬНУЮ и ВНУТРЬ нее вставить остальные 3 РАМКИ
+# Первая рамка вертикальная остальные 3 горизонтальные
+# В НИЖНЮЮ горизонтальную рамку добавить "Text edit"
+# СПРАВА СНИЗУ добавить "Push button" с надписью "Отправить"
+# Класс QFrame почти везде
+# СВЕРХУ в рамку добавить "TEXT BROWSER"
 
 class Router(QObject):
     def __init__(self):
