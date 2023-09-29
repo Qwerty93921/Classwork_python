@@ -1,0 +1,14 @@
+.like-border{
+    border: 3px solid black;
+    background-color: blue;
+    color: white;
+    height: 100px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10%;
+}

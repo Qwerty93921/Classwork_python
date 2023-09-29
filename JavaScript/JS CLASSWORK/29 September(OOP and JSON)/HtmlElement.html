@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Element</title>
+</head>
+<body>
+<script>
+  class HtmlElement {
+    name = "";
+    selfClosed = 0;
+    text = "";
+    attributes = {}
+    styles = {};
+    children = {};
+    htmlResult = "";
+
+    constructor(x) {
+      this.name = x.name;
+      this.attributes = x.attributes;
+      this.styles = x.styles;
+      this.text = x.text;
+      this.selfClosed = x.selfClosed;
+      this.children = x.children;
+    }
+    setStyle() {
+      // для сборки в одну строку всех стилей и присвоению к элементу HTML
+      let style = ' style ="';
+      for (let property in this.styles) {
+        style += ' ' + property + ": " + this.styles[property] + ";";
+      }
+      style += '"';
+      return style;
+    }
+    setAttributes() {
+      let atr = "";
+      for (let property in this.attributes) {
+        console.log(property) // key
+        console.log(this.attributes[property]) //value
+        console.log(this.attributes)
+        atr += ' ' + property + '= "' + this.attributes[property] + '"';
+      }
+      return atr;
+    }
+
+    getHtml() {
+      this.htmlResult += "<" + this.name + " ";
+      this.htmlResult += this.setStyle();
+      this.htmlResult += this.setAttributes();
+      this.htmlResult += ">";
+
+      if (this.text) this.htmlResult += this.text;
+      if (!this.selfClosed) {
+        for (let child in this.children) {
+          let newChild = new HtmlElement(this.children[child]);
+          this.htmlResult += newChild.getHtml();
+        }
+
+        this.htmlResult += "</" + this.name + ">";
+      }
+
+      console.log("getHTML", this.htmlResult);
+      return this.htmlResult;
+    }
+
+    // getCode() {
+    //   this.htmlResult+=this.main.getCss();
+    // }
+    //
+    // scanObjectRecursive(parentID, childrenObj, parentObj) {
+    //   for (let child in parentObj.children) {
+    //     parentObj.children[child] = this.scanObjectRecursive(parentID, childrenObj, parentObj.children[child])
+    //   }
+    //   if (parentObj.attributes.id === parentID)
+    //     parentObj.children.push(childrenObj);
+    //   return parentObj;
+    // }
+  }
+
+
+  let beginObj = {
+    name: "div",
+    attributes: {
+      id: "wrapper",
+    },
+    styles: {
+      display: "flex",
+    },
+    children: [
+      {
+        name: "div",
+        attributes: {
+          id: "wrapper2",
+        },
+        styles: {
+          width: "300px",
+          margin: "10px"
+        },
+        children: [
+          {
+            name: "h3",
+            text: "What is Lorem Ipsum?",
+            attributes: {
+              id: "wrapper2-1",
+            },
+            styles: {
+            },
+            children: []
+          },
+          {
+            name: "img",
+            attributes: {
+              id: "wrapper2-2",
+              src: "https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg"
+            },
+            styles: {
+              width: "100%"
+            },
+            selfClosed: 1,
+            children: []
+          },
+          {
+            name: "p",
+            text: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nulla ipsum, voluptatem nesciunt enim possimus, id, odio eos laborum pariatur unde? Officiis hic nulla velit, nihil modi dolores ducimus dolore.",
+            attributes: {
+              id: "wrapper2-3"
+            },
+            styles: {
+              textAlign: "justify",
+            },
+            children: []
+          },
+          {
+            name: "a",
+            text: "More...",
+            attributes: {
+              id: "wrapper2-4",
+              href: "https://www.lipsum.com/",
+              target: "_blank"
+            },
+            styles: {
+            },
+            selfClosed: 1,
+            children: []
+          },
+        ]
+      },
+    ]
+  };
+
+  let wrapper = new HtmlElement(beginObj);
+  document.write(wrapper.getHtml());
+</script>
+</body>
+</html>
