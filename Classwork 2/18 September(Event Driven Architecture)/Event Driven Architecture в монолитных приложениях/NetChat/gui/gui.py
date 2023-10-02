@@ -9,6 +9,7 @@ from .login_window import LoginWindow
 class Gui(QObject):
     sendMessage = pyqtSignal(str, str)
     loginUser = pyqtSignal(str)
+    changeChat = pyqtSignal(str)
     window : QWidget = None
     show_message = pyqtSignal(str, str)
     def __init__(self):
@@ -39,4 +40,9 @@ class Gui(QObject):
                 log.e('Неизвестное имя окна:', window_name)
         if self.running:
             self.run()
-        
+
+    def add_contact(self, name_contact):
+        pass
+
+    def set_chat(self, name_chat):
+        pass
