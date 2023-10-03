@@ -4,9 +4,11 @@ import time
 from logger import log
 import threading
 
+
 class UdpSender(QThread):
     _queue = []
-    sent = pyqtSignal()
+    sent = pyqtSignal(str)
+
 
     def __init__(self):
         super().__init__()
@@ -15,10 +17,8 @@ class UdpSender(QThread):
         self.running = False
         self.lock = threading.Lock()
 
-
-
     def run(self):
-        log.i("Udp sender запущен") # i() - метод info показывает сообщение
+        log.i("Сэндер запущен")
         self.running = True
         while self.running:
             if len(self._queue) > 0:
@@ -29,7 +29,8 @@ class UdpSender(QThread):
                 self.sent.emit(msg)
             else:
                 time.sleep(0.025)
-    
+
+
     def send(self, message, message_type):
         self.lock.acquire()
         self._queue.append((message, message_type,))
@@ -38,8 +39,3 @@ class UdpSender(QThread):
     def stop(self):
         self.running = False
         super().stop()
-
-
-if __name__ == "__main__":
-    pass
-    # Здесь тестим класс UdpSender

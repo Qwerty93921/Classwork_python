@@ -11,21 +11,22 @@ class Gui(QObject):
     loginUser = pyqtSignal(str)
     changeChat = pyqtSignal(str)
     window : QWidget = None
-    show_message = pyqtSignal(str, str)
+    show_message = pyqtSignal(str)
     def __init__(self):
         super().__init__()
         self.running = False
-        self.set_window('LoginWindow')
 
     def start(self):
         self.run()
 
     def run(self):
         log.i("Интерфэйс запущен")
-        self.window.show()
-        self.running = True
+        
 
     def set_window(self, window_name, username=None):
+        if window_name == type(self.window).__name__:
+            return
+        self.running = True
         if self.window is not None:
             self.window.hide()
         match window_name: 
@@ -39,7 +40,8 @@ class Gui(QObject):
             case _ : 
                 log.e('Неизвестное имя окна:', window_name)
         if self.running:
-            self.run()
+            self.window.show()
+        
 
     def add_contact(self, name_contact):
         pass
