@@ -12,8 +12,6 @@ class DataStorage(QThread):
         log.i("Дата сторэйдж запущен")
         self.ready.emit()
 
-        
-
     def auth(self, username):
         self.username = username
         self.authOk.emit(username)

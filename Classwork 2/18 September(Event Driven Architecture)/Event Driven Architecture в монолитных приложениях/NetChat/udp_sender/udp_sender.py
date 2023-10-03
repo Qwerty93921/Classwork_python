@@ -1,13 +1,14 @@
 from PyQt6.QtCore import QThread, pyqtSignal
 import socket
 import time
+import datetime
 from logger import log
 import threading
-
+from message import Message
 
 class UdpSender(QThread):
     _queue = []
-    sent = pyqtSignal(str)
+    sent = pyqtSignal(Message)
 
 
     def __init__(self):
@@ -20,20 +21,23 @@ class UdpSender(QThread):
     def run(self):
         log.i("Сэндер запущен")
         self.running = True
+        msg : Message = True
         while self.running:
             if len(self._queue) > 0:
                 self.lock.acquire()
-                msg, msg_type = self._queue.pop()
+                msg = self._queue.pop()
                 self.lock.release()
+                msg.time = datetime.datetime.now().strftime('%H:%M:%S')
+                string_to_send = msg.toJson()
                 self.socket.sendto(msg.encode(), self.addres)
                 self.sent.emit(msg)
             else:
                 time.sleep(0.025)
 
 
-    def send(self, message, message_type):
+    def send(self, msg : Message):
         self.lock.acquire()
-        self._queue.append((message, message_type,))
+        self._queue.append(msg) # Добавление сообщения
         self.lock.release()
 
     def stop(self):

@@ -1,15 +1,16 @@
 from PyQt6.QtCore import QObject, pyqtSignal
 from logger import log
+from message import Message
 
 # state, signal, transition
 class Controller(QObject):
     switchWindow = pyqtSignal(str, str)
     addContact = pyqtSignal(str)
-    showMessage = pyqtSignal(str)
-    sendMessage = pyqtSignal(str, str)
+    showMessage = pyqtSignal(Message)
+    sendMessage = pyqtSignal(Message)
     setChat = pyqtSignal(str)
 
-
+    _username = "John Doe"
     _state = "INIT"
     _transitions = (
         {'from': "INIT",     'to': "LOGIN",       'by': "DB_READY"},
@@ -48,23 +49,28 @@ class Controller(QObject):
                 pass
 
             case "MAIN_WIN":
-                username = args[0]
-                self.switchWindow.emit("MainWindow", username)
+                if args:
+                    self._username = args[0]
+
+                self.switchWindow.emit("MainWindow", self._username)
             
             case "ADD_FRIEND":
                 name = args[0]
                 self.addContact.emit(name)
 
             case "CHECK_MSG":
-                message_text = args[0]
-                message_type = args[1]
-                if message_type == "public": 
+                msg : Message = args[0]
+                # message_type = args[1]
+                if msg.type == "public": 
                     # Добавить проверку текущей вкладки (general и т.д)
-                    self.showMessage.emit(message_text)
+                    self.showMessage.emit(msg)
 
             case "SEND_MSG":
                 message_text = args[0]
-                self.sendMessage.emit(message_text, "public") 
+                msg = Message('{"text": "%s"}' % message_text)
+                msg.senderName = self._username
+                msg.type = "public"
+                self.sendMessage.emit(msg) 
 
             case "CHANGING_CHAT": 
                 chat_name = args[0]
@@ -110,12 +116,11 @@ class Controller(QObject):
     def recived_hello(self, name):
         self._process_signal('UR_HELLO', name)
     
-    def recived_message(self, message_text, message_type):
-        self._process_signal('UR_MESSAGE', message_text, message_type)
+    def recived_message(self, msg):
+        self._process_signal('UR_MESSAGE', msg)
 
     def send_message(self, message_text):
         self._process_signal('GUI_SEND', message_text)
         
     def change_chat(self, chat_name):
         self._process_signal('GUI_CHAT_CHANGE', chat_name)
-

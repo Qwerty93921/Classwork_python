@@ -1,9 +1,10 @@
 from PyQt6.QtCore import QThread, pyqtSignal
 import socket
 from logger import log
+from message import Message
 
 class UdpReceiver(QThread):
-    message = pyqtSignal(str, str)
+    message = pyqtSignal(Message)
     hello = pyqtSignal(str)
 
     def __init__(self):
@@ -18,9 +19,10 @@ class UdpReceiver(QThread):
         self.running = True
         while self.running:
             data, addr = self.socket.recvfrom(4096)
-            message = data.decode(encoding= "utf-8")
-            log.d(f'получено сообщение от {addr}: {message}')
-            self.message.emit(message, 'public')    
+            received_string = data.decode(encoding= "utf-8")
+            log.d(f'получено сообщение от {addr}: {received_string}')
+            msg = Message(received_string)
+            self.message.emit(msg)    
 
     def stop(self):
         self.running = False
