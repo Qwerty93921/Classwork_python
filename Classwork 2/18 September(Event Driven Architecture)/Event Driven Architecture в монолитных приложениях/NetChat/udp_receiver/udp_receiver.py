@@ -2,8 +2,6 @@ from PyQt6.QtCore import QThread, pyqtSignal
 import socket
 from logger import log
 
-
-
 class UdpReceiver(QThread):
     message = pyqtSignal(str, str)
     hello = pyqtSignal(str)
@@ -14,7 +12,6 @@ class UdpReceiver(QThread):
         self.addres = ('localhost', 9900)
         self.running = False
         
-
     def run(self):
         log.i("Ресивер запущен")
         self.socket.bind(self.addres)
