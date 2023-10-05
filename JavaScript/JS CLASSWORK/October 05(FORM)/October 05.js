@@ -10,6 +10,9 @@ function sendData() {
     
 }
 
+function asd() {
+    
+}
 
 
 // testForm.hasAttribute(name);
