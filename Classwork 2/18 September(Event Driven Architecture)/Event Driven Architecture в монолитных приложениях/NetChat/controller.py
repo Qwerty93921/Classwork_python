@@ -142,4 +142,3 @@ class Controller(QObject):
         
     def change_chat(self, chat_name):
         self._process_signal('GUI_CHAT_CHANGE', chat_name)
-

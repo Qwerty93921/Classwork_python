@@ -56,4 +56,3 @@ class Router(QObject):
         self.udp_receiver.stop()
         self.gui.stop()
         self.data_storage.stop()
-        
