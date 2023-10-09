@@ -46,7 +46,7 @@ class UdpSender(QThread):
         self.lock.acquire()
         self._queue.append(msg)
         self.lock.release()
-        
+
 
     def stop(self):
         self.running = False
