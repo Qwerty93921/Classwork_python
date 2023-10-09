@@ -6,13 +6,13 @@ from .main_window import MainWindow
 from .login_window import LoginWindow
 from message import Message
 
+
 class Gui(QObject):
     sendMessage = pyqtSignal(str)
     loginUser = pyqtSignal(str)
     changeChat = pyqtSignal(str)
     window : QWidget = None
     show_message = pyqtSignal(Message)
-
     def __init__(self):
         super().__init__()
         self.running = False

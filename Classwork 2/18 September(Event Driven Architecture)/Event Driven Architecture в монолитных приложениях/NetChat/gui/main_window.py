@@ -27,4 +27,5 @@ class MainWindow(QMainWindow):
 
     def show_message(self, msg : Message):
         display = self.findChild(QTextBrowser, 'MessageDisplay')
-        display.append(f"{msg.time} | {msg.senderName}: {msg.text}")
+        display.append(f"{msg.time}|  {msg.senderName}:  {msg.text}")
+        
