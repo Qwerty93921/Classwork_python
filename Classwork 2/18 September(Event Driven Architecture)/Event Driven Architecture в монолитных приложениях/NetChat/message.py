@@ -27,7 +27,6 @@ class Message():
         data['type'] = self.type
         data['senderName'] = self.senderName
         data['receiverName'] = self.receiverName
-
         return json.dumps(data)
 
 if '__main__' == __name__:
