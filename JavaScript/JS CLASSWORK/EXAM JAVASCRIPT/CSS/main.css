@@ -1,0 +1,21 @@
+body {
+    background-color: #f6f6f6;
+}
+
+.logo {
+    color: #009595;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.nav-item:first-child {
+    padding: 0 10px;
+    border-right: 1px solid #85858586;
+    border-left: 1px solid #85858586;
+}
+
+.nav-link {
+    font-size: 20px;
+}
