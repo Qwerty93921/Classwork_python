@@ -9,6 +9,13 @@ class Message():
     receiverName = ''
     receiverIP = ''
     
+    @staticmethod
+    def fromText(text):
+        msg = 
+
+    def copy(msg: Message):
+        pass
+
 
     def __init__(self, jsonstring): # '{"time": "03-10-2023", ....}'
         data = json.loads(jsonstring)
@@ -41,4 +48,5 @@ if '__main__' == __name__:
     msg = Message('{"text":"sender_name","time":50}')
     print(msg.toJson())
 
-
+    msg2 = Message.fromText("hello")
+    print(msg.toJson())
