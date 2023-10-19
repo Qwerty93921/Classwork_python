@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library exam</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script src="exam.js"></script>
+
+    <div class="container">
+        <!-- logotype -->
+        <div class="row">
+            <div class="col-12 logo">Library</div>
+        </div>
+        <!-- navbar -->
+        <div class="row">
+            <div class="col-12 nav-bar">
+                <div class="col-6">
+                    <ul class="menu d-flex align-items-center">
+                        <li class="menu-item">Books</li>
+                        <li class="menu-item">Visitors</li>
+                        <li class="menu-item">Cards</li>
+                        <li class="menu-item">Statistics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- details -->
+        <div class="d-flex justify-content-between align-items-center"> 
+            <div class="all-visitors">All visitors</div>
+            <div>
+                <button class="button-class">New visitor</button>
+            </div>
+        </div>
+
+            <div> Sort by:
+
+                <input list="type-of-sort" value="ID" required/>
+
+                <datalist id="type-of-sort">
+
+                    <option value="ID">
+                    <option value="Name">
+                    <option value="Alphabet">
+                    <option value="The newest">
+                    <option value="The oldest">
+
+                </datalist>
+
+                <button class="sort-button">Sort</button>
+
+                <div class="sort-right-side">
+
+                        <label>Search:</label>
+                        <input type="text">
+
+                    <button>Search</button>
+
+                </div>
+
+            </div>
+
+
+        <table class="table-class">
+
+            <tr>
+                <th class="border-short">ID</th>
+                <th class="border-long">Name</th>
+                <th class="border-long">Phone</th>
+                <th class="border-short">Edit</th>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">1</td>
+                <td class="border-long">Colette Kelley</td>
+                <td class="border-long">012 435 45 67</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">2</td>
+                <td class="border-long">Ruby-Rose Lennon</td>
+                <td class="border-long">012 647 34 24</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">3</td>
+                <td class="border-long">Leanne Gibbons</td>
+                <td class="border-long">012 879 78 45</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">4</td>
+                <td class="border-long">Rumaisa Peel</td>
+                <td class="border-long">012 456 64 67</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">5</td>
+                <td class="border-long">Gene Medrano</td>
+                <td class="border-long">012 245 47 89</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">6</td>
+                <td class="border-long">Sheddan Tucker</td>
+                <td class="border-long">012 345 85 90</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">7</td>
+                <td class="border-long">Christina Mack</td>
+                <td class="border-long">012 123 36 46</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">8</td>
+                <td class="border-long">Everly Moses</td>
+                <td class="border-long">012 678 99 74</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">9</td>
+                <td class="border-long">Kara Feeney</td>
+                <td class="border-long">012 456 96 53</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+                <td class="border-short">10</td>
+                <td class="border-long">Cameron Rennie</td>
+                <td class="border-long">012 967 47 85</td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+
+            </tr>
+
+
+        </table>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    background-color: #f6f6f6;
+}
+
+ul {
+    margin: 0;
+}
+
+.logo {
+    color: #009595;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    background-color: #404040;
+}
+
+.menu-item:first-child {
+    border-left: 3px solid #595959;
+    border-right: 3px solid #595959;
+}
+
+.menu-item {
+    color: #f6f6f6;
+    font-size: 24px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-right: 3px solid #595959;
+}
+
+.menu-item:hover { 
+    border-bottom: 3px solid #009595;
+}
+
+.all-visitors {
+    color: #009595;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.button-class {
+    width: 200px;
+    background-color: gainsboro;
+}
+
+.sort-button {
+    width: 100px;
+    background-color: gainsboro;
+    margin-left: 10px;
+}
+
+.sort-right-side {
+    float: right;
+}
+
+.border-short {
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.border-long {
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+
+.table-class {
+    margin-top: 50px;
+    display: flex;
+}
+
+.image-class {
+    max-width: 25px;
+    /* ограничивает максимальный размер картинки */
+    /* 512 512 размер картинки */
+    margin: 5px 10px;
+    cursor: pointer;
+}
