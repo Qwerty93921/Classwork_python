@@ -34,7 +34,7 @@
         <div class="d-flex justify-content-between align-items-center"> 
             <div class="all-visitors">All visitors</div>
             <div>
-                <button class="button-class">New visitor</button>
+                <button class="button-class" onclick="addVisitor()">New visitor</button>
             </div>
         </div>
 
@@ -80,7 +80,20 @@
                 <td class="border-short">1</td>
                 <td class="border-long">Colette Kelley</td>
                 <td class="border-long">012 435 45 67</td>
-                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+                <td class="border-short"><img class="image-class" src="img/pen.png" alt="">
+                    <button style="border: none;" onclick="editVisitor(this)" data-id="1">
+                    <img src="img/pen.png" alt="da" width="25">
+                  </button>
+                </td>
+
+                <!-- ------------------------------------------------------------------------------------- -->
+
+                <!-- <button style="border: none;" onclick="editVisitor(this)" data-id="1">
+                    <img src="img/pen.png" alt="da" width="25">
+                  </button> -->
+
+                <!-- ------------------------------------------------------------------------------------- -->
+
 
             </tr>
 
@@ -88,7 +101,7 @@
                 <td class="border-short">2</td>
                 <td class="border-long">Ruby-Rose Lennon</td>
                 <td class="border-long">012 647 34 24</td>
-                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+                <td class="border-short"><img onclick="editVisitor(this)" class="image-class" src="img/pen.png" alt=""></td>
 
             </tr>
 
@@ -96,7 +109,7 @@
                 <td class="border-short">3</td>
                 <td class="border-long">Leanne Gibbons</td>
                 <td class="border-long">012 879 78 45</td>
-                <td class="border-short"><img class="image-class" src="img/pen.png" alt=""></td>
+                <td class="border-short"><img  class="image-class" src="img/pen.png" alt=""></td>
 
             </tr>
 
@@ -158,7 +171,6 @@
 
 
         </table>
-
 
     </div>
 
