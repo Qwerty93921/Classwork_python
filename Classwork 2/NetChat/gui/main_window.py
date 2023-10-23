@@ -17,6 +17,7 @@ class MainWindow(QMainWindow):
         super().show()
         button = self.findChild(QPushButton, "Send")
         button.clicked.connect(self.send_message)
+        self.add_contact("General")
 
     def send_message(self):
         log.d("Кнопка нажата")
@@ -28,4 +29,9 @@ class MainWindow(QMainWindow):
     def show_message(self, msg : Message):
         display = self.findChild(QTextBrowser, 'MessageDisplay')
         display.append(f"{msg.time}|  {msg.senderName}:  {msg.text}")
-        
+    
+    def add_contact(self, name_contact):
+        contactlist: QVBoxLayout = self.findChild(QVBoxLayout, "ContactList")
+        newcontact = QLabel(text = name_contact)
+        contactlist.addWidget(newcontact)
+        self.contact_list.append(name_contact)
