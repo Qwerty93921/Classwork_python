@@ -1,6 +1,5 @@
 import pygame
 from controllable import Controllable
-
 class Block(Controllable):
 
     SPEED = 5
@@ -22,10 +21,6 @@ class Block(Controllable):
             {"key": pygame.K_s, "action": self.moveDown}
         )     
 
-    def set_position(self, position):
-        self.hide()
-        self.position = position
-        self.show()
 
     def moveUp(self):
         self.position[1] -= self.SPEED
@@ -44,3 +39,7 @@ class Block(Controllable):
     
     def placeTo(self, owner):
         self.owner = owner
+
+        
+
+    
