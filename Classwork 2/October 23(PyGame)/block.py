@@ -1,8 +1,9 @@
 import pygame
 from controllable import Controllable
+from collider import Collider
 
 class Block(Controllable):
-
+    other_objects: list # None список НЕ РАВНО ПУСТОМУ списку
     SPEED = 5
 
     def __init__(self, size, color):
@@ -12,7 +13,10 @@ class Block(Controllable):
         super().__init__()
         self.body = pygame.Surface(size)
         self.body.fill(self.color)
-        
+        self.collider = Collider(self.position, self.size)
+
+    def set_object_list(self, other_objects):
+        self.other_objects = other_objects
 
     def default_controls(self):
         return (
@@ -23,9 +27,19 @@ class Block(Controllable):
         )     
 
     def set_position(self, position):
-        self.hide()
-        self.position = position
-        self.show()
+        # self.hide()
+        collision = False
+        old_position = self.position
+        self.collider.set_position(position)
+        for o in self.other_objects:
+            if o is not self:
+                collision = self.collider.check_collision(o)
+
+        if not collision:
+            self.position = position
+        else:
+            self.collider.set_position(old_position)
+        # self.show()
 
     def moveUp(self):
         self.position[1] -= self.SPEED
