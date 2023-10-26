@@ -22,7 +22,7 @@ class Application():
         b.set_object_list(self.objects)
         self.player.set_object_list(self.objects)
         b.placeTo(self.screen)
-        b.set_position((400, 300))
+        b.set_position((400, 300)) # кортеж, можно написать tuple([400, 300]) с квадратными скобками
         self.objects.append(self.player)
         self.objects.append(b)
 
