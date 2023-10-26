@@ -1,10 +1,12 @@
 import pygame
 from animatedsprite import AnimatedSprite
+from block import Block
 
 class Application():
     FPS = 25
     icon = 'resources/pygamelogo.png'
     background_color = (60, 60, 60)
+    objects = []
 
     def __init__(self, size, title):
         self.size = size
@@ -13,9 +15,23 @@ class Application():
         pygame.display.set_caption(title)
         image = pygame.image.load(self.icon)
         pygame.display.set_icon(image)
-        # self.player = Block((50, 50), "yellow")
-        self.player = AnimatedSprite(1.5, 'resources/sprites/anime_boy', 12, controllable=True)
+        self.player = AnimatedSprite(1.2, 'resources/sprites/anime_boy', 12, controllable=True)
         self.player.placeTo(self.screen)
+
+        ground = Block((800, 50), 'green')
+        ground.set_object_list(self.objects)
+        ground.placeTo(self.screen)
+        ground.set_position((0, 550))
+
+        b = Block((50, 100), 'green')
+        b.set_object_list(self.objects)
+        b.placeTo(self.screen)
+        b.set_position((450, 450))
+
+        self.player.set_object_list(self.objects)
+        self.objects.append(self.player)
+        self.objects.append(b)
+        self.objects.append(ground)
 
     def run(self):
         clock = pygame.time.Clock()
@@ -24,11 +40,11 @@ class Application():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
-
-
-            self.player.check_controls()
+            for n in self.objects:
+                n.check_controls()
             self.screen.fill(self.background_color)
-            self.player.show()
+            for n in self.objects:
+                n.show()
 
             pygame.display.update()
             clock.tick(self.FPS)

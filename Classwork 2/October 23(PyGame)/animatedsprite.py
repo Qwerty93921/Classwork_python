@@ -17,7 +17,7 @@ class AnimatedSprite(Block):
         self.frame_width = self.width / self.frames
         self.current_sprite = self.sp_up
         self.image = pygame.transform.scale(self.current_sprite, (self.width, self.height))
-        super().__init__((self.frame_width, self.height), (0, 0, 0))
+        super().__init__((self.frame_width, self.height), (0, 0, 0), self.controllable)
         self.body.set_colorkey((0, 0, 0))
 
     def set_current_sprite(self, sprite):
