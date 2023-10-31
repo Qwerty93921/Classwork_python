@@ -20,12 +20,11 @@ route = list(map(int, sys.argv[1:]))
 print("Маршрут: ", route)
 size = max(route) + 1
 houses = Table(size)
-
 print("Дома: \n",houses, sep="")
 
 result = 0
 
-for i in range(len(route)):
+for i in range(len(route) - 1):
     row = route[i]
     col = route[i + 1]
     result += houses.table[row][col]
