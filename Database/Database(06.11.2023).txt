@@ -1,0 +1,30 @@
+PG ADMIN 4 V7
+SSMS(Microsoft table program)
+
+DDL - Data definition language(язык описания данных)
+DML - Data Manipulation language(язык манипулирования данными)
+DCL - Data control language
+TCL - Transaction control language
+
+DML
+
+
+
+DDL
+
+CREATE - создание базы данных
+ALTER - 
+DROP
+
+DCL 
+
+GRANT - предоставляет права пользователю или группе лиц на определенные операции с объектом
+REVOKE - отзывает права которые были выданы
+
+TCL
+
+BEGIN TRANSACTION
+COMMIT TRANSACTION
+ROLLBACK TRANSACTION
+SAVE TRANSACTION
+
