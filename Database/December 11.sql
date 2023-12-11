@@ -39,3 +39,57 @@ values(
 0,
 0
 );
+
+--------------------------------------------------------------------------------
+
+--Practice 6
+
+select * from Departments
+
+--1 задание
+
+--Вывести названия отделений, что находятся в том же 
+--корпусе, что и отделение “Cardiology”
+
+select Building from Departments
+where Name = 'Cardiology'
+
+Select Name
+from Departments
+where Building = 1
+
+--2 задание
+
+--Вывести названия отделений, что находятся в том же 
+--корпусе, что и отделения “Gastroenterology” и “General 
+--Surgery”.
+select * from Departments
+where Name = 'Gastroenterology' or Name = 'General Surgery'
+
+--3 задание
+
+--Вывести название отделения, которое получило меньше 
+--всего пожертвований
+
+------------------------------------------------------------------------------
+select * from Donations
+
+select DepartmentId from Donations as d
+where Amount = 
+(select MIN(Amount) from Donations)
+-----------------------------------------------------------------------------
+
+SELECT d.Name --TOP 1 d.Name
+FROM Departments as d
+JOIN Donations as don ON d.Id = don.DepartmentId
+GROUP BY d.Id, d.Name
+ORDER BY SUM(don.Amount) ASC;
+
+--4 задание
+
+--Вывести фамилии врачей, ставка которых больше, чем 
+--у врача “Thomas Gerada”.
+select * from Doctors
+
+SELECT Surname FROM Doctors
+WHERE Salary > (SELECT Salary FROM Doctors WHERE Name = 'Thomas Gerada');
