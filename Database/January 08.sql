@@ -53,3 +53,48 @@ COALESCE
 SELECT FirstName, LastName,
     COALESCE(Phone, Email, 'неопределено') AS Contacts
 FROM Clients
+
+--------------------------------------------------------------------------------------------
+--Practice
+--DT_PZ_09
+--До 29 числа сдать дз
+
+-- 1 task
+
+SELECT * FROM Wards
+
+SELECT Name, Places FROM Wards
+WHERE DepartmentId = 5 AND Places > 5
+
+-- 2 task
+
+SELECT * FROM Departments
+SELECT * from Wards
+select * from DoctorsExaminations
+
+
+SELECT DISTINCT d.Name
+FROM Departments as d
+JOIN Wards as w ON d.Id = w.DepartmentId
+INNER JOIN DoctorsExaminations as de ON w.Id = de.WardId
+WHERE de.Date >= DATEADD(WEEK, -1, GETDATE());
+
+--Dateadd - манипуляция с датой
+--WEEK, -1 - значит на НЕДЕЛЮ НАЗАД(-7 дней)
+--GETDATE - текущая дата
+-- - 7 дней ОТ ТЕКУЩЕЙ ДАТЫ
+
+--3 task
+
+select * from DoctorsExaminations
+select * from Diseases
+
+SELECT * FROM Diseases
+WHERE Id NOT IN (SELECT DiseaseId FROM DoctorsExaminations)
+
+-- 4 task
+select * from DoctorsExaminations
+select * from Diseases
+select * from Doctors
+
+select Name, Surname from Doctors
