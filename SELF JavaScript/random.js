@@ -474,5 +474,9 @@ LESSON 10
 
 https://www.youtube.com/watch?v=yUTwuyfTsOc&list=PLDyJYA6aTY1kJIwbYHzGOuvSMNTfqksmk&index=10
 
+function название(a, b) {
+    result = a + b
+    return result
+}
 
 */
