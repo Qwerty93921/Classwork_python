@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript testing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,6 +12,15 @@
     <!-- Video number 3 -->
 
     <h1>JavaScript обучение</h1>
+
+    <button class="button-style" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Display the date</button>
+
+    <button type="button" name="mainButton" onclick="funcForButton(this)">Button counter</button>
+
+    <input oninput="onInput(this)">
+    <!-- oninput - срабатывает когда ЧТО-ТО ВВОДЯТ В ПОЛЕ -->
+    
+    <p id="demo"></p>
 
     <script src="random.js"></script>
 </body>

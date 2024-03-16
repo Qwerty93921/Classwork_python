@@ -1,0 +1,8 @@
+.button-style{
+    border: 3px solid orange;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    cursor: cell;
+    font-size: 20px;
+}
