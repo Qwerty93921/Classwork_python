@@ -696,3 +696,12 @@ https://www.youtube.com/watch?v=1nzH6WCEonQ&list=PLDyJYA6aTY1kJIwbYHzGOuvSMNTfqk
 
 
 */
+
+function myFunc1() {
+    alert("Вы нажали на кнопку")
+}
+
+function myFunc2() {
+    alert("Функция 2 сработала")
+    document.getElementById("demo3").innerHTML = "Text after function 2"
+}
