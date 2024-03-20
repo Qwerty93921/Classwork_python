@@ -705,3 +705,9 @@ function myFunc2() {
     alert("Функция 2 сработала")
     document.getElementById("demo3").innerHTML = "Text after function 2"
 }
+
+function myFunc3() {
+    let message = "Text from function 3"
+    alert("Функция 3 сработала")
+    document.getElementById("demo4").innerHTML = message
+}
